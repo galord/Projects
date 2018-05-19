@@ -25,13 +25,13 @@
   
  
   
-  .content-container > h4, .content-container a{
+  .content-container > h2, .content-container a,.content-container > h4{
   text-decoration:none;
   color:#000;
     text-align:center;
   }
   
-  .content-container h4 a:hover{
+  .content-container h2 a:hover{
     text-decoration:underline;
     
   }
@@ -61,6 +61,7 @@
   #information {
   padding:10px 5px;
   border-bottom:1px solid #fff;  
+    display:none;
   }
 </style>
 
@@ -77,7 +78,7 @@
   
 
 <div class="content-container">  
-  <h4> <a href="mailto:galord1993@gmail.com"> Clemens Amiko</a> </h4>
+  <h2> <a href="mailto:galord1993@gmail.com"> Clemens Amiko</a> </h2>
   <h4> Table of content </h4>
 
   <div class="main-content">
@@ -85,14 +86,16 @@
     
     <div class="logo">
     </div>
+    
+    <h4> Personal Information </h4>
     <div class="buttonContainer"><button onclick="showContent()"> show more </button></div>
-    <div id="information">Personal Information</br> 
-      <pre>
-      Name: Pham Duong Anh Kiet
-      DoB: 01/01/1993
-      City: HCMC
-      Jobs: Engineering
-      </pre>
+    <div id="information"> 
+      
+   &rarr; <h4>Name: Pham Duong Anh Kiet</h4>
+   &rarr; <h4>DoB: 01/01/1993</h4>
+   &rarr; <h4>City: HCMC</h4>
+   &rarr; <h4>Jobs: Engineering</h4>
+      
     </div>
     
    
