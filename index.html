@@ -52,15 +52,20 @@
     background-size:contain;
    margin-top:10px;
   }
+  
+  button {
+  margin:auto;
+    padding: 10px 0;
+  }
 </style>
 
 <script>
  function showContent(){
  var  x = document.getElementById('information');
    if(x.style.display === "none"){
-        x.style.display = "block";
+        x.style.display = "none";
            }
-   else { x.style.display ="none";}
+   else { x.style.display ="block";}
   }
   
 </script>
@@ -76,7 +81,7 @@
     <div class="logo">
     </div>
     <button onclick="showContent()"> show more </button>
-    <div id="information">
+    <div id="information">Personal Information</br> 
       <pre>
       Name: Pham Duong Anh Kiet
       DoB: 01/01/1993
