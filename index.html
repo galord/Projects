@@ -54,8 +54,14 @@
   }
   
   .buttonContainer {
-  margin:auto;
-    padding: 10px 0;
+position:relative;
+    text-align:center;
+    padding:10px 0;
+    display:inline;
+  }
+  
+  .buttonContainer button {
+  padding:5px;
   }
   
   #information {
@@ -63,6 +69,8 @@
   border-bottom:1px solid #fff;  
     display:none;
   }
+  
+  
 </style>
 
 <script>
@@ -71,7 +79,9 @@
    if(x.style.display === "none"){
         x.style.display = "block";
            }
-   else { x.style.display ="none";}
+   else { x.style.display ="none";
+         
+        document.getElementById("myButton1").value="Hide";}
   }
   
 </script>
@@ -88,7 +98,7 @@
     </div>
     
     <h4> Personal Information </h4>
-    <div class="buttonContainer"><button onclick="showContent()"> show more </button></div>
+    <div class="buttonContainer"><input type="button" onclick="showContent()" value="Show More" id="myButton1"> </input></div>
     <div id="information"> 
       
    &rarr; <h4>Name: Pham Duong Anh Kiet</h4>
