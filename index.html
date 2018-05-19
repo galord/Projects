@@ -53,9 +53,14 @@
    margin-top:10px;
   }
   
-  button {
+  .buttonContainer {
   margin:auto;
     padding: 10px 0;
+  }
+  
+  #information {
+  padding:10px 5px;
+  border-bottom:1px solid #fff;  
   }
 </style>
 
@@ -63,9 +68,9 @@
  function showContent(){
  var  x = document.getElementById('information');
    if(x.style.display === "none"){
-        x.style.display = "none";
+        x.style.display = "block";
            }
-   else { x.style.display ="block";}
+   else { x.style.display ="none";}
   }
   
 </script>
@@ -80,7 +85,7 @@
     
     <div class="logo">
     </div>
-    <button onclick="showContent()"> show more </button>
+    <div class="buttonContainer"><button onclick="showContent()"> show more </button></div>
     <div id="information">Personal Information</br> 
       <pre>
       Name: Pham Duong Anh Kiet
