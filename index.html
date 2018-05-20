@@ -80,16 +80,19 @@ position:relative;
 <script>
  function showContent(){
  var  x = document.getElementsByClassName('information');
-   
-   if(x.style.display === "block"){
-        x.style.display = "none";
-     document.getElementsByClassName("myButtonShow").value="Show More";
+   var y =document.getElementsByClassName("myButtonShow");
+   for (i = 0; i<x.length; i++){
+     for (j = 0; j< y.length ;j++){
+      if(x[i].style.display === "block"){
+        x[i].style.display = "none";
+     
+     y[j].value="Show More";
            }
-   else { x.style.display ="block";
+   else { x[i].style.display ="block";
          
-        document.getElementsByClassName("myButtonShow").value="Hide";}
+        y.[j].value="Hide";}
   }
-  
+ }
 </script>
   
 
@@ -105,7 +108,7 @@ position:relative;
     
     <h4 class="titleContent"> Personal Information </h4>
     <div class="buttonContainer"><input type="button" onclick="showContent()" value="Show More" class="myButtonShow"> </input></div>
-    <div id="information"> 
+    <div class="information"> 
       
     <h4>&rsaquo; Name: Pham Duong Anh Kiet</h4>
     <h4>&rsaquo; DoB: 01/01/1993</h4>
