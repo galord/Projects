@@ -92,7 +92,7 @@ position:relative;
 </style>
 
 <script>
- function showContent(){
+ function showInformation(){
  var  x = document.getElementById('information');
    var y =document.getElementById("myButtonShow");
  
@@ -105,6 +105,21 @@ position:relative;
          
         y.value="Hide";}
  }
+  
+  function showInformation(){
+ var  x = document.getElementById('projectInformation');
+   var y =document.getElementById("myProjectShow");
+ 
+      if(x.style.display === "block"){
+        x.style.display = "none";
+     
+     y.value="Show More";
+           }
+   else { x.style.display ="block";
+         
+        y.value="Hide";}
+ }
+  
 </script>
   
 
@@ -118,16 +133,29 @@ position:relative;
     <div class="logo">
     </div>
     
+   <div class="blockTitle">
     <h4 class="titleContent"> Personal Information </h4>
     <div class="buttonContainer"><input type="button" onclick="showContent()" value="Show More" id="myButtonShow"> </input></div>
     <div id="information"> 
       
     <h4>&rsaquo; Name: Pham Duong Anh Kiet</h4>
     <h4>&rsaquo; DoB: 01/01/1993</h4>
-    <h4>&rsaquo; City: HCMC</h4>
+    <h4>&rsaquo; Address: 305 Block E, An Quang Department, Ward 9 Dist.10 HCMC</h4>
     <h4>&rsaquo; Jobs: Engineering</h4>
-      
-    </div>
+    </div>  
+   </div>
+   
+   <div class="blockTittle">
+     <h4 class="titleContent"> Project </h4>
+     <div class="buttonContainer> <input type="button" onclick ="showProject()" value="Show More" id="myProjectShow"> </input> </div> 
+     <div id="projectInformation">
+     
+                                 asdadadadadsa</br>
+                                 adsadad</br>
+     </div>
+  
+  </div>
+  
     
    
   </div>
