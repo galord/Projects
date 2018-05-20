@@ -79,15 +79,15 @@ position:relative;
 
 <script>
  function showContent(){
- var  x = document.getElementByClassName('information');
+ var  x = document.getElementsByClassName('information');
    
    if(x.style.display === "block"){
         x.style.display = "none";
-     document.getElementByClassName("myButtonShow").value="Show More";
+     document.getElementsByClassName("myButtonShow").value="Show More";
            }
    else { x.style.display ="block";
          
-        document.getElementByClassName("myButtonShow").value="Hide";}
+        document.getElementsByClassName("myButtonShow").value="Hide";}
   }
   
 </script>
