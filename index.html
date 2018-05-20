@@ -108,17 +108,17 @@ position:relative;
  }
   
   function showProject(){
- var  a = document.getElementById('projectInformation');
-   var b =document.getElementById("myProjectShow");
+ var  x = document.getElementById('projectInformation');
+   var y =document.getElementById("myProjectShow");
  
-      if(a.style.display === "block"){
-        b.style.display = "none";
+      if(x.style.display === "block"){
+        x.style.display = "none";
      
      y.value="Show More";
            }
-   else { a.style.display ="block";
+   else { x.style.display ="block";
          
-        b.value="Hide";}
+        y.value="Hide";}
  }
   
 </script>
@@ -136,7 +136,7 @@ position:relative;
     
    <div class="blockTitle">
     <h4 class="titleContent"> Personal Information </h4>
-    <div class="buttonContainer"><input type="button" onclick="showContent()" value="Show More" id="myButtonShow"> </input></div>
+    <div class="buttonContainer"><input type="button" onclick="showInformation()" value="Show More" id="myButtonShow"> </input></div>
     <div id="information"> 
       
     <h4>&rsaquo; Name: Pham Duong Anh Kiet</h4>
